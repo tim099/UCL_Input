@@ -1,0 +1,15 @@
+{
+    "name": "UCL_InputEditorComponent",
+    "references": [
+        "GUID:056bbd8070825e24b86b3383d60c2acb",
+        "GUID:4c555891f72787444a02cc0388aa32db"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
