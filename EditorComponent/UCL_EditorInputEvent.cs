@@ -59,7 +59,7 @@ namespace UCL.InputLib.Editor {
             } else {
                 if(!f_Rigisterd) Rigister();
             }
-            CheckInput();
+            //CheckInput();
         }
         public void DuringSceneGui(UnityEditor.SceneView view) {
             var e = Event.current;
