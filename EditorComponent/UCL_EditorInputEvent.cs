@@ -10,6 +10,11 @@ namespace UCL.InputLib.Editor {
     [ExecuteInEditMode]
     public class UCL_EditorInputEvent : UCL_InputEvent {
 #if UNITY_EDITOR
+        private void OnValidate() {
+            if(f_UpdateInEditorMode) {
+                Rigister();
+            }
+        }
         virtual protected void OnEnable() {
             if(f_UpdateInEditorMode) {
                 Rigister();
@@ -54,7 +59,7 @@ namespace UCL.InputLib.Editor {
             m_KeyDown = null;
         }
         virtual public void EditorUpdate() {
-            if(!f_UpdateInEditorMode) {
+            if(!f_UpdateInEditorMode) {//|| (gameObject == null || !gameObject.activeInHierarchy)
                 if(f_Rigisterd) UnRigister();
             } else {
                 if(!f_Rigisterd) Rigister();
