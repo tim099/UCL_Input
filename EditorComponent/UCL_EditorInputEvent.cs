@@ -39,7 +39,7 @@ namespace UCL.InputLib.Editor {
                 //m_RigisterKey =  "UCL_EditorInputEvent_"+ GetInstanceID();
                 //Debug.LogWarning("UCL_EditorInputEvent Rigister():" + name+ ",RigisterKey:"+ m_RigisterKey);
                 //UCL.Core.Editor.UCL_EditorUpdateManager.AddEditorUpdateAct(m_RigisterKey, EditorUpdate);
-                UCL.Core.Editor.UCL_EditorUpdateManager.AddEditorUpdateAct(EditorUpdate);
+                UCL.Core.EditorLib.UCL_EditorUpdateManager.AddEditorUpdateAct(EditorUpdate);
                 //UCL.Core.Editor.UCL_EditorUpdateManager.m_EditorUpdateEvent += EditorUpdate;
                 //UnityEditor.EditorApplication.update += EditorUpdate;
                 UnityEditor.SceneView.duringSceneGui += DuringSceneGui;
@@ -54,7 +54,7 @@ namespace UCL.InputLib.Editor {
             //UnityEditor.EditorApplication.update -= EditorUpdate;
             //UCL.Core.Editor.UCL_EditorUpdateManager.m_EditorUpdateEvent -= EditorUpdate;
             //UCL.Core.Editor.UCL_EditorUpdateManager.RemoveEditorUpdateAct(m_RigisterKey);
-            UCL.Core.Editor.UCL_EditorUpdateManager.RemoveEditorUpdateAct(EditorUpdate);
+            UCL.Core.EditorLib.UCL_EditorUpdateManager.RemoveEditorUpdateAct(EditorUpdate);
             UnityEditor.SceneView.duringSceneGui -= DuringSceneGui;
             m_KeyDown = null;
         }
