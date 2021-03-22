@@ -33,7 +33,7 @@ namespace UCL.InputLib.Editor {
         public void Rigister() {
             if(f_Rigisterd) return;
             
-            if(!UnityEditor.EditorApplication.isPlaying) {
+            if(!UCL.Core.EditorLib.EditorApplicationMapper.isPlaying) {
                 
                 f_Rigisterd = true;
                 //m_RigisterKey =  "UCL_EditorInputEvent_"+ GetInstanceID();
